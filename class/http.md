@@ -107,6 +107,3 @@ server.listen(8080, () => {
 Execute o código com `node <nome-arquivo>.js` e veja os resultados em seu navegador acessando `localhost:8080`, `localhost:8080/dog` e `localhost:8080/cat`.
 
 Observe que para um sistema muito grande, pode se tornar inviável manter o código com varios `if ... else if ... else ...`.
-
-# Express.js
-
