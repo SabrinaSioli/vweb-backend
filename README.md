@@ -4,8 +4,9 @@ Nós do PET Computação produzimos esse material para você que busca um aprofu
 
 ## Conteúdo
 
-- [Node.js](./class/node.md)
-- [Protocolo http](./class/http.md)
+- [Javascript](./class/01-javascript.md)
+- [Node.js](./class/02-node.md)
+- [Protocolo http](./03-class/http.md)
 
 ## Contribuindo
 
