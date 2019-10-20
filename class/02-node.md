@@ -185,7 +185,6 @@ Quando trabalhamos com servidores, é fácil notar que estamos sujeitos a vário
 O event loop é um agente responsável por escutar se os eventos registrados foram completados. Ele é, de forma vaga, um loop infinito que fica verificando se um determinado evento registado ocorreu. Caso tenha ocorrido, enviamos uma função atrelada ao fim do evento para uma fila. Por exemplo, analise o código de criar um arquivo.
 
 ```javascript
-
 const fs = require('fs');
 
 fs.writeFile('index.html', data, (err) => {
@@ -198,7 +197,6 @@ Veja que estamos registrando um evento de criação de arquivo. Logo o event loo
 Como já foi explicado, node.js tem arquitetura não bloqueante. Então, ele não vai esperar o evento terminar para executar qualquer código posterior a ele. Por exemplo:
 
 ```javascript
-
 const fs = require('fs');
 
 fs.writeFile('index.html', data, (err) => {
@@ -209,7 +207,6 @@ console.log('Você gosta de café? :D');
 console.log('...');
 console.log('...');
 console.log('...');
-
 ```
 
 Vamos imaginar que esse código é um diálogo entre o senhor Event Isaac Loop e o senhor John JavaScript. Observe:
@@ -224,4 +221,4 @@ Event Isaac Loop: Senhor, o arquivo que o senhor solicitou está `Feito`.
 
 Observe que o código não foi bloqueado em nenhum momento, após a solicitação para criar o arquivo, ele continuou o código ou, como na nossa analogia, a conversa.
 
-[Próxima sessão](./)
+[Próxima sessão](./03-http.md)

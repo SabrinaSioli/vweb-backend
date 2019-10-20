@@ -6,13 +6,13 @@ Analise um site qualquer. Por exemplo, o github. Quando você acessa a página d
 
 O protocolo HTTP define um conjunto de métodos de requisição responsáveis por indicar a ação a ser executada para um dado recurso. Os que mais utilizaremos são `GET`, `POST`, `PUT`, `PATCH` e `DELETE`.
 
-| Método | Descrição |
-| ------ | --------- |
-| `GET`  | Solicita a representação de um recurso específico |
-| `POST` | Utiliado para enviar alguma entidade a um recurso específico causando uma mudança de estado ou efeitos colaterais no servidor |
-| `PUT`  | Substitui toda a representação de um recurso específico por uma nova representação enviada na requisição |
-| `PATCH` | Substitui uma determinada representação de um recurso específico por outro enviado na requisição |
-| `DELETE` | Remove um recurso específico |
+| Método   | Descrição                                                                                                                     |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `GET`    | Solicita a representação de um recurso específico                                                                             |
+| `POST`   | Utiliado para enviar alguma entidade a um recurso específico causando uma mudança de estado ou efeitos colaterais no servidor |
+| `PUT`    | Substitui toda a representação de um recurso específico por uma nova representação enviada na requisição                      |
+| `PATCH`  | Substitui uma determinada representação de um recurso específico por outro enviado na requisição                              |
+| `DELETE` | Remove um recurso específico                                                                                                  |
 
 Para entender melho os outros métodos, acesse o [MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods)
 
@@ -107,3 +107,5 @@ server.listen(8080, () => {
 Execute o código com `node <nome-arquivo>.js` e veja os resultados em seu navegador acessando `localhost:8080`, `localhost:8080/dog` e `localhost:8080/cat`.
 
 Observe que para um sistema muito grande, pode se tornar inviável manter o código com varios `if ... else if ... else ...`.
+
+[Próxima Sessão](./04-npm.md)
